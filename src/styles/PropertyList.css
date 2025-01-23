@@ -1,0 +1,237 @@
+/* General Container Margin */
+.property-list-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Property List Grid */
+.property-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    align-items: start;
+}
+
+/* Property Card Styles */
+.property-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Property Image */
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Property Details Text */
+.property-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.property-card p strong {
+    color: #555;
+    font-weight: bold;
+}
+
+/* Button Container */
+.property-card .button-container {
+    margin-top: auto;
+    text-align: center;
+}
+
+/* Property Link (Button) */
+.property-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #BDA071;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.property-link:hover {
+    background-color: #8c7b55;
+}
+
+/* Title Margin */
+h2 {
+    color: #BDA071;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Add to Favorites Button */
+.favorite-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: #BDA071;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.favorite-button:hover {
+    background-color: #8c7b55;
+    color: #ffffff;
+}
+
+.favorite-button.favorited {
+    background-color: #ffcccc;
+    color: #b30000;
+}
+
+.property-card {
+    cursor: grab;
+    user-select: none;
+}
+
+.property-card:active {
+    cursor: grabbing;
+}
+
+.favorites-box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+.favorites-box h2 {
+    margin-bottom: 20px;
+    color: #BDA071;
+}
+
+.clear-favorites-button{
+    color: #ffffff;
+    background-color: #ec6f6f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.clear-favorites-button:hover {
+    background-color: #e63946;
+}
+
+/* No Favorites Text */
+.no-favorites {
+    font-size: 16px;
+    color: #888;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Favorites List */
+.favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Individual Favorite Card */
+.favorite-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: grab;
+    user-select: none;
+}
+
+.favorite-card:active {
+    cursor: grabbing;
+}
+
+/* Favorite Card Title */
+.favorite-card h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Favorite Card Details */
+.favorite-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Remove Favorite Button */
+.remove-favorite-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #BDA071;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.remove-favorite-button:hover {
+    background-color: #8c7b55;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .property-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .property-card {
+        padding: 10px;
+    }
+
+    .favorite-card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .property-list {
+        grid-template-columns: 1fr;
+    }
+
+    .property-card img {
+        height: 150px;
+    }
+
+    .favorite-card {
+        width: 100%;
+    }
+}

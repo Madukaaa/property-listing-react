@@ -1,0 +1,52 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+/* About Us and Contact Us Sections */
+.footer-section {
+    margin: 10px 0;
+}
+
+.footer-section h3 {
+    color: #BDA071;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Contact Information */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Bottom Text */
+.footer-bottom {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #bbb;
+}

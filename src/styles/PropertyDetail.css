@@ -1,0 +1,165 @@
+.property-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Large Image */
+.image-gallery {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.large-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Thumbnail Gallery */
+.thumbnail-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.thumbnail:hover {
+    border-color: #BDA071;
+}
+
+/* Title and Price */
+.property-detail h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.property-detail h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #BDA071;
+    margin-bottom: 20px;
+}
+
+.property-detail p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* Tabs Styling */
+.react-tabs__tab-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.react-tabs__tab {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.react-tabs__tab--selected {
+    border-bottom: 2px solid #BDA071;
+    color: #BDA071;
+}
+
+/* Tab Content */
+.tab-content {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.floor-plan-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .property-detail {
+        padding: 10px;
+    }
+
+    .large-image {
+        height: 300px;
+    }
+
+    .thumbnail {
+        width: 80px;
+        height: 60px;
+    }
+
+    .property-detail h1 {
+        font-size: 24px;
+    }
+
+    .property-detail h2 {
+        font-size: 20px;
+    }
+
+    .property-detail p {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .tab-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .property-detail {
+        padding: 5px;
+    }
+
+    .large-image {
+        height: 200px;
+    }
+
+    .thumbnail-gallery {
+        gap: 5px;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 45px;
+    }
+
+    .property-detail h1 {
+        font-size: 20px;
+    }
+
+    .property-detail h2 {
+        font-size: 18px;
+    }
+
+    .property-detail p {
+        font-size: 12px;
+    }
+
+    .tab-content {
+        padding: 5px;
+    }
+}

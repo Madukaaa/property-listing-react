@@ -1,0 +1,116 @@
+{
+  "properties": [
+    {
+      "id": "prop1",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 750000,
+      "tenure": "Freehold",
+      "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+      "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+      "picture": "images/prop1pic1small.png",
+      "url": "properties/prop1.html",
+      "added": {
+        "month": "October",
+        "day": 12,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop2",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 399995,
+      "tenure": "Freehold",
+      "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms. This apartment being only five years old, is still under a 10 year building guarantee...",
+      "location": "Crofton Road Orpington BR6",
+      "picture": "images/prop2pic1small.png",
+      "url": "properties/prop2.html",
+      "added":  {
+        "month": "September",
+        "day": 14,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 950000,
+      "tenure": "Leasehold",
+      "description": "Spacious four-bedroom family house located in a quiet residential area. Featuring a large living room, dining area, modern kitchen, and a beautiful garden. This home also includes a dedicated home office space, a bright sunroom overlooking the garden, and ample storage throughout. The master bedroom comes with an en-suite bathroom and built-in wardrobes. The rear garden is perfect for entertaining guests and features a patio area, lawn space, and mature plants.",
+      "location": "High Street, Bromley BR1",
+      "picture": "images/prop3pic1small.png",
+      "url": "properties/prop3.html",
+      "added": {
+        "month": "August",
+        "day": 25,
+        "year": 2023
+      }
+    },
+    {
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 250000,
+      "tenure": "Freehold",
+      "description": "A cozy one-bedroom flat ideal for first-time buyers. Located close to public transport and shopping centers. Includes a modern kitchen and bathroom. The open-plan living area creates a spacious feel, and the large windows allow plenty of natural light. The kitchen is fully fitted with modern appliances, and the bathroom is designed with contemporary fixtures. Additional features include secure entry, a communal garden, and nearby amenities such as grocery stores, cafes, and parks.",
+      "location": "Church Lane, Croydon CR0",
+      "picture": "images/prop4pic1small.png",
+      "url": "properties/prop4.html",
+      "added": {
+        "month": "July",
+        "day": 10,
+        "year": 2023
+      }
+    },
+    {
+      "id": "prop5",
+      "type": "House",
+      "bedrooms": 5,
+      "price": 1200000,
+      "tenure": "Freehold",
+      "description": "A luxurious five-bedroom detached house featuring a private swimming pool, spacious garden, and a triple garage. Ideal for large families. The property also offers an elegant reception hall, multiple reception rooms, and a state-of-the-art kitchen with premium appliances. The master suite boasts a private balcony with panoramic views, a dressing area, and an opulent en-suite bathroom. The landscaped garden includes a barbecue area, outdoor seating, and a water feature.",
+      "location": "Queen's Avenue, Richmond TW10",
+      "picture": "images/prop5pic1small.png",
+      "url": "properties/prop5.html",
+      "added": {
+        "month": "March",
+        "day": 15,
+        "year": 2024
+      }
+    },
+    {
+      "id": "prop6",
+      "type": "Flat",
+      "bedrooms": 3,
+      "price": 600000,
+      "tenure": "Leasehold",
+      "description": "A spacious three-bedroom apartment with a balcony overlooking the city skyline. Located in a premium development with access to gym and concierge services. The open-plan layout includes a stylish living area, dining space, and a fully equipped kitchen. The master bedroom includes an en-suite bathroom, while the other bedrooms offer generous space and built-in wardrobes. Residents can also enjoy on-site parking, 24/7 security, and access to nearby cafes and shopping outlets.",
+      "location": "Westminster Bridge Road, London SE1",
+      "picture": "images/prop6pic1small.png",
+      "url": "properties/prop6.html",
+      "added": {
+        "month": "February",
+        "day": 20,
+        "year": 2024
+      }
+    },
+    {
+      "id": "prop7",
+      "type": "House",
+      "bedrooms": 2,
+      "price": 450000,
+      "tenure": "Freehold",
+      "description": "Charming two-bedroom cottage located in a peaceful countryside setting. Features a wood-burning fireplace and a spacious garden. The cottage includes a cozy living room, a modern kitchen with integrated appliances, and a dining area with access to the garden patio. Both bedrooms are well-proportioned, and the bathroom features contemporary fittings. Outside, there is a secure parking space and stunning views of the surrounding landscape.",
+      "location": "Meadow Lane, Sevenoaks TN13",
+      "picture": "images/prop7pic1small.png",
+      "url": "properties/prop7.html",
+      "added": {
+        "month": "January",
+        "day": 5,
+        "year": 2024
+      }
+    }
+  ]
+}

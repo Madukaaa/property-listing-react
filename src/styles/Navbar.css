@@ -1,0 +1,115 @@
+/* Navbar Styles */
+.navbar {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Section */
+.navbar-logo img {
+    width: 120px;
+}
+
+.navbar-wordmark {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-wordmark h1 {
+    font-family: "Yeseva One", sans-serif;
+    font-size: 24px;
+    color: #BDA071;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Navigation Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #BDA071;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar-logo img {
+        width: 80px; /* Smaller Logo */
+    }
+
+    .navbar-wordmark h1 {
+        font-size: 18px; /* Smaller Text */
+    }
+
+    .navbar-links {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar-links a {
+        font-size: 14px; /* Smaller Links */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .navbar-logo img {
+        width: 60px; /* Even Smaller Logo */
+    }
+
+    .navbar-wordmark h1 {
+        font-size: 16px; /* Adjusted Text */
+        letter-spacing: 1px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .navbar-links a {
+        font-size: 12px;
+    }
+}
