@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+# Property Listing App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a **React.js** application for browsing, searching, and managing properties. The app includes functionality for users to mark properties as favorites, search by various criteria, and view detailed information about each property. It also incorporates a splash screen, drag-and-drop functionality, and local storage for data persistence.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Splash Screen**: A loading screen displayed for 3 seconds when the app starts.
+2. **Search Functionality**: Users can search for properties based on multiple criteria:
+    - Property type
+    - Price range
+    - Number of bedrooms
+    - Location (postcode)
+    - Date added
+3. **Favorite Properties**:
+    - Add/remove properties to/from a favorites list.
+    - Drag-and-drop functionality to manage favorites.
+    - Persist favorites using `localStorage`.
+4. **Property Details**:
+    - View detailed information about a specific property.
+5. **Reusable Components**:
+    - `Navbar`, `Banner`, `SearchForm`, `PropertyList`, `Footer`.
+6. **Routing**:
+    - Home page (`/`) with search and property listings.
+    - Property detail page (`/property/:id`).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm installed on your system.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Steps
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/property-listing-app.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd property-listing-app
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. Open the app in your browser at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+/src
+├── components
+│   ├── Banner.js          # Displays the banner on the main page
+│   ├── Footer.js          # Footer component
+│   ├── Navbar.js          # Navigation bar
+│   ├── PropertyDetail.js  # Property details page
+│   ├── PropertyList.js    # Displays a list of properties
+│   ├── SearchForm.js      # Search form for filtering properties
+│   └── SplashScreen.js    # Splash screen shown on app load
+├── data
+│   └── properties.json    # JSON file containing property data
+├── styles
+│   └── App.css            # Main stylesheet
+├── App.js                 # Main application component
+├── index.js               # Entry point of the app
+└── README.md              # Documentation for the project
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Key Files Explained
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `App.js`
 
-## Learn More
+- Manages the overall structure and state of the application.
+- Features:
+    - Splash screen logic
+    - Search functionality (`handleSearch`)
+    - Favorite properties management with drag-and-drop support.
+    - Routing for the home page and property detail page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `properties.json`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Contains sample property data used by the app. This can be replaced with data from an API.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. **Search for Properties**:
+    - Use the form to search by type, price range, bedrooms, location, or date.
+2. **Manage Favorites**:
+    - Mark properties as favorites using the favorite button or drag them into the favorites list.
+    - Remove properties from favorites by dragging them out or clicking the remove button.
+3. **View Property Details**:
+    - Click on a property to see more details on a dedicated page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Frontend**: React.js
+- **Styling**: CSS
+- **State Management**: React hooks (`useState`, `useEffect`)
+- **Routing**: React Router
+- **Persistence**: Browser `localStorage`
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Future Enhancements
 
-### Deployment
+1. Integrate with a real API for property data.
+2. Implement user authentication.
+3. Add responsive design for better mobile support.
+4. Include sorting options for property listings.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to contribute by submitting pull requests or reporting issues. Ensure your code follows the existing style and structure.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+## Contact
+
+For any questions or suggestions, feel free to reach out:
+
+- **Name**: Maduka Karunathilake
+- **GitHub**: [https://github.com/](https://github.com/your-username)Madukaaa
+
